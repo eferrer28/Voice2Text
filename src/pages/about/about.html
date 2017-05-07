@@ -1,11 +1,17 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Text to Speech
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+  <ion-item>
+    <ion-label stacked>Text</ion-label>
+    <ion-textarea rows="5" [(negModel)]="text"></ion-textarea>
+  </ion-item>
+
+  <button clear ion-button (click)="speak()">Text to Speech</button>
 
 </ion-content>
